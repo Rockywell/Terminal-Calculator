@@ -158,6 +158,7 @@ int main()
 
         double first, second;
 
+        // Breaks out of the loop if one of inputs is an invalid number
         if (!getNumber("First number: ", first) ||
             !getNumber("Second number: ", second))
         {
@@ -166,15 +167,18 @@ int main()
 
         try
         {
+            // Calculates the result based on the user's choice and inputs
             double result = calculator.calculate(
                 first, second, choice[0]);
 
             cout << "Result: " << result << endl;
 
+            // Saves the calculation to history and file e.g. "5 + 3 = 8"
             stringstream entry;
             entry << first << " " << choice
                   << " " << second << " = " << result;
 
+            // Saves the calculation to the private history vector and the history file
             calculator.saveCalculation(entry.str());
         }
         catch (const runtime_error &error)
