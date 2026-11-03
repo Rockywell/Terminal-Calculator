@@ -6,7 +6,6 @@ My program uses C++ to demonstrate a terminal calculator that uses console input
 
 I wrote this software to test my understanding of the language and give myself an opportunity to exercise how I organize and use the standard library within C++.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 
 [Software Demo Video](https://youtu.be/KlXXfgD5JXk)
 
