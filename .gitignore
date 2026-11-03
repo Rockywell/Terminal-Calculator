@@ -1,0 +1,14 @@
+# Compiled executables
+calculator
+*.o
+*.out
+*.exe
+
+# Generated calculation history
+history.txt
+
+# macOS files
+.DS_Store
+
+# VS Code local settings
+.vscode/
