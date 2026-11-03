@@ -180,7 +180,7 @@ int main()
             entry << first << " " << choice
                   << " " << second << " = " << result;
 
-            // Saves the equation as a string o the history vector and file
+            // Saves the equation as a string to the history vector and file
             calculator.saveCalculation(entry.str());
         }
         catch (const runtime_error &error)
