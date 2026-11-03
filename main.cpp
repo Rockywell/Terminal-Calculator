@@ -16,7 +16,8 @@ private:
     vector<string> history;
 
 public:
-    // Perform basic arithmetic
+    /* Perform basic arithmetic by matching the
+       operation character and returning the result */
     double calculate(double a, double b, char operation)
     {
         switch (operation)
@@ -138,6 +139,7 @@ int main()
         cout << "q  Quit\n";
         cout << "Choose an option: ";
 
+        // Breaks out of the loop if the user inputs 'q' or an EOF signal
         if (!getline(cin, choice) || choice == "q")
         {
             break;
@@ -173,12 +175,12 @@ int main()
 
             cout << "Result: " << result << endl;
 
-            // Saves the calculation to history and file e.g. "5 + 3 = 8"
+            // Stores the whole equation as a string e.g. "5 + 3 = 8"
             stringstream entry;
             entry << first << " " << choice
                   << " " << second << " = " << result;
 
-            // Saves the calculation to the private history vector and the history file
+            // Saves the equation to the history vector and file
             calculator.saveCalculation(entry.str());
         }
         catch (const runtime_error &error)
