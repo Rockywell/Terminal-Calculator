@@ -175,12 +175,12 @@ int main()
 
             cout << "Result: " << result << endl;
 
-            // Stores the whole equation as a string e.g. "5 + 3 = 8"
+            // Stores the whole equation e.g. "5 + 3 = 8"
             stringstream entry;
             entry << first << " " << choice
                   << " " << second << " = " << result;
 
-            // Saves the equation to the history vector and file
+            // Saves the equation as a string o the history vector and file
             calculator.saveCalculation(entry.str());
         }
         catch (const runtime_error &error)
